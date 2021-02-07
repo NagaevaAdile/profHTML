@@ -1,0 +1,74 @@
+.fetured__filter {
+    display: flex;
+    margin: 50px 0 64px 20px;
+}
+
+.fetured__fil {
+    @include font(14px, 17px, 600);
+    display: flex;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.filter__img {
+    position: absolute;
+    top: 3px;
+    left: 50px;
+}
+
+.fetured__fil-details {
+    @include font(14px, 17px);
+    display: flex;
+    color: $grey-opas-color;
+    text-transform: uppercase;
+    position: absolute;
+    left: 42%;
+}
+
+.fetured__list-item {
+    position: relative;
+    margin: 0 48px 0 0;
+}
+
+.fetured__list-item::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background-image: url(../img/arrow.png);
+    background-size: 10px 5px;
+    top: 7px;
+    right: -21px;
+}
+
+.pages {
+    @include font(16px, 19px);
+    color: $grey-color;
+    padding: 15px 38px;
+    background-color: transparent;
+    border: 1px solid $grey-color;
+    margin: 49px auto 95px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 14px;
+        background-image: url('../img/arrowBefore.png');
+        background-size: 8px 14px;
+        top: 19px;
+        left: 15px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 14px;
+        background-image: url('../img/arrowAfter.png');
+        background-size: 8px 14px;
+        top: 19px;
+        right: 15px;
+    }
+}

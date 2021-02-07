@@ -1,0 +1,122 @@
+.header__registration {
+    justify-content: start;
+}
+
+.form__box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 64px;
+    margin-bottom: 96px;
+}
+
+.legend__name {
+    @include font(16px, 19px, 300);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.form__input {
+    @include font(13px, 16px, 300);
+    width: 360px;
+    border: 1px solid $input-grey;
+    margin: 10px 0 10px 0;
+    padding: 17px;
+
+
+    &:hover {
+        border: 1px solid $pink-dark-color;
+    }
+}
+
+
+.input__text {
+    @include font(13px, 16px, 300);
+    color: $grey-color;
+    width: 360px;
+    margin-top: 5px;
+}
+
+.radio__input__box {
+    margin: 35px 0;
+}
+
+.radio__input {
+    display: none;
+}
+
+.radio__label {
+    @include font(13px, 13px, 300);
+    margin: 20px;
+    position: relative;
+    padding-left: 10px;
+
+
+    &:before {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 15px;
+        border: 1px solid $input-grey;
+        border-radius: 50%;
+        left: -20px;
+    }
+
+    // &:before:hover {
+    //     border: 1px solid $pink-dark-color;
+    // }
+}
+
+
+.radio__input:checked+.radio__label:before {
+    /* background-color: $input-grey; */
+    background-image: url('../img/esc.png');
+    background-size: 16px;
+
+}
+
+.form__submit {
+    @include font(14px, 17px);
+    text-transform: uppercase;
+    color: $white-color;
+    background-color: $pink-dark-color;
+    padding: 16px 66px 17px 29px;
+    box-sizing: border-box;
+    margin: 39px 0 0 0;
+
+
+    & svg {
+        margin-left: 20px;
+    }
+}
+
+
+.form__info {
+    @include font(24px, 29px, 300);
+    width: 650px;
+
+    & h2 {
+        text-transform: uppercase;
+    }
+
+    & p {
+        margin: 22px 0;
+    }
+}
+
+
+.form__info__item {
+    margin: 0 0 16px 0;
+    position: relative;
+    padding: 0 0 0 45px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 16px;
+        background-image: url('../img/done.png');
+        background-size: 20px 16px;
+        top: 10px;
+        left: 0;
+    }
+}

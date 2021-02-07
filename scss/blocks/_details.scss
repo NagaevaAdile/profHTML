@@ -1,0 +1,25 @@
+.details {
+    background-color: $black-light-color;
+    min-height: 341px;
+
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        min-height: 341px;
+        align-items: center;
+    }
+
+    &__heading {
+        @include font(20px, 24px);
+        color: $white-color;
+        margin: 25px 0 16px;
+    }
+
+    &__text {
+        @include font(14px, 17px, 300);
+        width: 300px;
+        color: $white-dark-color;
+    }
+}
