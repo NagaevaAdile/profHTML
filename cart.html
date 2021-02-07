@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUCT</title>
+    <title>CART</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
@@ -15,10 +15,9 @@
 <body>
     <header class="header">
         <div class="container header__wrapper">
-            <!---<input type="search" class="search">-->
+            <!-- <input type="search" class="search"> -->
             <div class="header__logo-wrapper">
-                <a href="index.html" target="_blank"><img class="header__logo" src="img/logo.png" alt="logo" width="44"
-                        height="38"></a>
+                <img class="header__logo" src="img/logo.png" alt="logo" width="44" height="38">
                 <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M19.0596 17.6259C20.6713 15.8658 21.6282 13.6048 21.7698 11.2225C21.9113 8.84018 21.2288 6.48173 19.8369 4.54318C18.445 2.60463 16.4285 1.20404 14.126 0.576619C11.8234 -0.0508009 9.3751 0.13316 7.19217 1.09761C5.00923 2.06205 3.22463 3.74825 2.13804 5.87302C1.05145 7.9978 0.729054 10.4318 1.225 12.7661C1.72094 15.1005 3.00501 17.1932 4.86158 18.6927C6.71814 20.1922 9.03413 21.0072 11.4206 21.0009C13.673 21.004 15.8645 20.27 17.6606 18.9109L25.4086 26.7179C25.4941 26.807 25.5965 26.8781 25.7099 26.927C25.8232 26.9759 25.9452 27.0017 26.0686 27.0029C26.1923 27.0033 26.3148 26.9782 26.4283 26.9292C26.5419 26.8801 26.6441 26.8082 26.7286 26.7179C26.9025 26.537 26.9997 26.2958 26.9997 26.0449C26.9997 25.794 26.9025 25.5528 26.7286 25.3719L19.0596 17.6259ZM2.88662 10.5009C2.89946 8.81563 3.41094 7.17187 4.35659 5.77685C5.30224 4.38183 6.63972 3.29801 8.20044 2.662C9.76115 2.02599 11.4752 1.86627 13.1266 2.20298C14.7779 2.53969 16.2926 3.35775 17.4797 4.55404C18.6668 5.75033 19.4732 7.27129 19.7972 8.92519C20.1212 10.5791 19.9483 12.2919 19.3002 13.8476C18.6522 15.4034 17.5581 16.7325 16.1559 17.6674C14.7536 18.6023 13.1059 19.1011 11.4206 19.1009C9.14916 19.0901 6.97482 18.1784 5.37484 16.566C3.77486 14.9537 2.87998 12.7724 2.88662 10.5009Z"
@@ -52,6 +51,7 @@
                 </li>
             </ul>
         </div>
+
         <nav class="header__navigation">
             <div class="header__menu">
                 <h2 class="navigation__header">Menu</h2>
@@ -62,7 +62,7 @@
                 <li>
                     <h3 class="header__name">Man</h3>
                     <ul class="header__items">
-                        <li><a href="#">Accesories</a></li>
+                        <li class="list__items"><a href="#">Accesories</a></li>
                         <li><a href="#">Bags</a></li>
                         <li><a href="#">Denim</a></li>
                         <li><a href="#">T-Shirts</a></li>
@@ -93,96 +93,67 @@
         </nav>
     </header>
 
-
     <main class="main">
-        <section class="header__catalog">
-            <h2 class="header__catalog-name">new arrivals </h2>
-            <ul class="header__catalog-list">
-                <li class="header__catalog-item">home</li>
-                <li class="header__catalog-item">man</li>
-                <li class="header__catalog-transform">new arrivals</li>
+        <section class="header__catalog header__registration">
+            <h2 class="header__catalog-name  container">shopping cart</h2>
+        </section>
+
+        <section class="cart container">
+            <h1 class="visually-hidden">cart</h1>
+
+            <ul class="cart__list">
+                <li class="item__cart">
+                    <img src="img/fetured-3.jpg" alt="man in panama" width="262" height="306">
+                    <div class="cart__info">
+                        <h2>mango people <span>t-shirt</span> </h2>
+                        <p>Price: <span>$300</span> </p>
+                        <p>Color: Red</p>
+                        <p>Size: Xl</p>
+                        <p>Quantity</p>
+                    </div>
+                </li>
+                <li class="item__cart">
+                    <img src="img/fetured-3.jpg" alt="man in panama" width="262" height="306">
+                    <div class="cart__info">
+                        <h2>mango people <span>t-shirt</span> </h2>
+                        <p>Price: <span>$300</span> </p>
+                        <p>Color: Red</p>
+                        <p>Size: Xl</p>
+                        <p>Quantity</p>
+                    </div>
+                </li>
             </ul>
-        </section>
 
-        <section class="intro__product">
-            <div class="product__img"><img src="img/productBac.jpg" alt="product" width="597" height="724"></div>
-        </section>
+            <div class="register__list">
+                <form class="form__cart" action="GET">
+                    <fieldset>
+                        <legend>shipping adress</legend>
+                        <input class="input__cart" type="text" placeholder="Bangladesh">
+                        <input class="input__cart" type="text" placeholder="State">
+                        <input class="input__cart" type="text" placeholder="Postcode / Zip">
+                        <button type="submit">get a quote</button>
+                    </fieldset>
+                </form>
 
-        <section class="product__card container">
-            <div class="product__wrapper">
-                <h2 class="product__collection">women collection</h2>
-                <svg class="line__pink" width="63" height="4" viewBox="0 0 63 4" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M63 0.786865H0V3.81225H63V0.786865Z" fill="#EF5B70" />
-                </svg>
-                <p class="product__name">moschino cheap and chic</p>
-                <p class="product__info">Compellingly actualize fully researched processes before proactive outsourcing.
-                    Progressively syndicate
-                    collaborative architectures before cutting-edge services. Completely visualize parallel core
-                    competencies rather than exceptional portals. </p>
-                <p class="product__price">$561</p>
-                <svg class="line__grey" width="642" height="2" viewBox="0 0 642 2" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.5 1.49829H641.5H0.5Z" stroke="#EAEAEA" stroke-linejoin="round" />
-                </svg>
-                <ul class="product__list">
-                    <li>choose color</li>
-                    <li>choose size</li>
-                    <li>quantity</li>
-                </ul>
+                <div class="total">
+                    <p></p>
+                    <p></p>
+                </div>
 
-                <a class="product__btn" href="#"> Add to Cart</a>
             </div>
 
         </section>
 
-        <section class="fetured container fetured__product ">
-            <ul class="fetured__list">
-                <li class="fetured__item">
-                    <img src="img/fetured-1.jpg" alt="man in coat">
-                    <h3 class="fetured__heading-item">ellery x m`o capsule</h3>
-                    <p class="fetured__text-item">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="fetured__price">$52.00</p>
-                    <div class="over__wrapper">
-                        <div class="overlay"></div>
-                        <button class="fetured__btn">
-                            <img src="img/basket.png" alt="basket" width="25" height="23">
-                            <p class="btn__text"> Add to cart </p>
-                        </button>
-                    </div>
-                </li>
-                <li class="fetured__item">
-                    <img src="img/fetured-2.jpg" alt="lady with hat">
-                    <h3 class="fetured__heading-item">ellery x m`o capsule</h3>
-                    <p class="fetured__text-item">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="fetured__price">$52.00</p>
-                    <div class="over__wrapper">
-                        <div class="overlay"></div>
-                        <button class="fetured__btn">
-                            <img src="img/basket.png" alt="basket" width="25" height="23">
-                            <p class="btn__text"> Add to cart </p>
-                        </button>
-                    </div>
-                </li>
-                <li class="fetured__item">
-                    <img src="img/fetured-3.jpg" alt="man in panama">
-                    <h3 class="fetured__heading-item">ellery x m`o capsule</h3>
-                    <p class="fetured__text-item">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p class="fetured__price">$52.00</p>
-                    <div class="over__wrapper">
-                        <div class="overlay"></div>
-                        <button class="fetured__btn">
-                            <img src="img/basket.png" alt="basket" width="25" height="23">
-                            <p class="btn__text"> Add to cart </p>
-                        </button>
-                    </div>
-                </li>
-            </ul>
-        </section>
+
+
+
+
+
+
+
+
+
+
 
     </main>
 
@@ -241,7 +212,6 @@
     </footer>
 
     <script src="main.js"></script>
-
 </body>
 
 </html>

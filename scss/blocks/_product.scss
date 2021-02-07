@@ -1,8 +1,100 @@
 .intro__product {
     background-color: $dirty-white;
     height: 777px;
+
 }
 
 .product__img {
     text-align: center;
+}
+
+.fetured__product {
+    margin-bottom: 130px;
+    margin-top: 130px;
+}
+
+.product__card {
+    width: 1141px;
+    height: 601px;
+    border: 1px solid $dirty-dirty-white;
+    margin-top: -55px;
+    background-color: $white-color;
+}
+
+.product__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 65px 0 0 0;
+}
+
+.line__pink {
+    margin: 12px 0;
+}
+
+.product__collection {
+    @include font(14px, 17px, 300);
+    text-transform: uppercase;
+    color: $pink-dark-color;
+}
+
+.product__name {
+    @include font(18px, 22px, 300);
+    text-transform: uppercase;
+    color: $grey-opas-color;
+    margin: 0 0 50px 0;
+}
+
+.product__info {
+    @include font(14px, 17px, 300);
+    color: $grey-opas-color;
+    width: 555px;
+    text-align: center;
+}
+
+.product__price {
+    @include font(24px, 29px, 300);
+    color: $pink-dark-color;
+    margin: 33px 0 65px 0;
+}
+
+.product__list {
+    @include font(14px, 17px);
+    text-transform: uppercase;
+    display: flex;
+    color: $grey-opas-color;
+    margin: 65px 0 0 0;
+
+    & li {
+        padding: 0 42px 0 0;
+    }
+}
+
+.product__btn {
+    @include font(16px, 19px);
+    color: $pink-dark-color;
+    padding: 15px 38px 15px 80px;
+    background-color: transparent;
+    border: 1px solid $pink-dark-color;
+    margin: 49px auto 95px;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url('../img/pinkBasket.png');
+        width: 26px;
+        height: 25px;
+        background-size: 26px 25px;
+        left: 3px;
+        top: 11px;
+        margin: 0 23px 0 23px;
+    }
+
+    &:hover {
+        background-color: $pink-dark-color;
+        color: $white-color;
+    }
 }

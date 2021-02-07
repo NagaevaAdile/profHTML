@@ -884,4 +884,130 @@ body,
 .product__img {
   text-align: center;
 }
+
+.fetured__product {
+  margin-bottom: 130px;
+  margin-top: 130px;
+}
+
+.product__card {
+  width: 1141px;
+  height: 601px;
+  border: 1px solid #EAEAEA;
+  margin-top: -55px;
+  background-color: #FFFFFF;
+}
+
+.product__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 65px 0 0 0;
+}
+
+.line__pink {
+  margin: 12px 0;
+}
+
+.product__collection {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #F16D7F;
+}
+
+.product__name {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #6F6E6E;
+  margin: 0 0 50px 0;
+}
+
+.product__info {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  color: #6F6E6E;
+  width: 555px;
+  text-align: center;
+}
+
+.product__price {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  color: #F16D7F;
+  margin: 33px 0 65px 0;
+}
+
+.product__list {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  display: flex;
+  color: #6F6E6E;
+  margin: 65px 0 0 0;
+}
+
+.product__list li {
+  padding: 0 42px 0 0;
+}
+
+.product__btn {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  color: #F16D7F;
+  padding: 15px 38px 15px 80px;
+  background-color: transparent;
+  border: 1px solid #F16D7F;
+  margin: 49px auto 95px;
+  position: relative;
+}
+
+.product__btn:before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/pinkBasket.png");
+  width: 26px;
+  height: 25px;
+  background-size: 26px 25px;
+  left: 3px;
+  top: 11px;
+  margin: 0 23px 0 23px;
+}
+
+.product__btn:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+}
+
+.cart {
+  display: flex;
+}
+
+.item__cart {
+  display: flex;
+}
+
+.form__cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__cart {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
