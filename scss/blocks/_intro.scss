@@ -10,9 +10,17 @@
         padding-left: 60px;
     }
 
+    &__svg {
+        margin-right: 16px;
+    }
+
     &__heading {
         @include font(48px, 58px, 900);
         text-transform: uppercase;
+
+        @include tablet {
+            @include font (24px, 29px, 700);
+        }
     }
 
     &__text {
@@ -22,5 +30,10 @@
 
     &__pink {
         color: $pink-dark-color;
+    }
+
+    &__img {
+        width: 50%;
+
     }
 }

@@ -17,7 +17,7 @@
 
 .form__input {
     @include font(13px, 16px, 300);
-    width: 360px;
+    width: 100%;
     border: 1px solid $input-grey;
     margin: 10px 0 10px 0;
     padding: 17px;
