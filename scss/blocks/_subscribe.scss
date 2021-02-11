@@ -3,6 +3,10 @@
     background-image: url('../img/subscribe-back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include tablets {
+        padding: 53px 0 219px 0;
+    }
 }
 
 .subscribe__list {
@@ -11,12 +15,20 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .subscribe__face-text {
     @include font(20px, 24px);
     width: 350px;
     margin: 40px 0 0;
+
+    @include tablets {
+        margin-bottom: 50px;
+    }
 }
 
 .subscibe__italic {

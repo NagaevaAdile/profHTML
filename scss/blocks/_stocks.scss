@@ -4,7 +4,7 @@
     margin-bottom: 96px;
     justify-content: space-between;
 
-    @include tablet {
+    @include tablets {
         margin-bottom: 155px;
     }
 }
@@ -17,15 +17,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 
-    @include tablet {
+    @include tablets {
         margin-top: 20px;
+    }
+
+    @include mobile {
+        width: 350px;
     }
 
     &--women {
         background-image: url(../img/stock-1.jpg);
 
+        @include mobile {
+            margin-top: 65px;
+        }
     }
 
     &--men {
@@ -41,6 +49,11 @@
         background-image: url(../img/stock-4.jpg);
         width: 100%;
         min-height: 180px;
+
+        @include mobile {
+            width: 350px;
+            height: 111px;
+        }
     }
 }
 

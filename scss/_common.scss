@@ -18,7 +18,7 @@ body,
     width: 71%;
     margin: 0 auto;
 
-    @include tablet {
-        width: 95%;
+    @include tablets {
+        width: 94%;
     }
 }

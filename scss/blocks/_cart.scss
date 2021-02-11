@@ -3,11 +3,38 @@
     margin-top: 96px;
     margin-bottom: 128px;
     justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+.cart__img {
+    width: 262px;
+    height: 306px;
+
+    @include mobile {
+        width: 144px;
+        height: 201px;
+    }
+}
+
+.svg__cart-img {
+    width: 18px;
+    height: 18px;
+
+    @include mobile {
+        width: 10px;
+        height: 10px;
+    }
 }
 
 .cart__list {
     width: 652px;
 
+    @include mobile {
+        width: 340px;
+    }
 }
 
 .heading__cart-esc {
@@ -41,6 +68,12 @@
         text-transform: uppercase;
         border: 1px solid $input-grey;
         padding: 17px 40px;
+
+        @include mobile {
+            @include font (11px, 14px);
+            margin-left: 10px;
+            padding: 10px;
+        }
     }
 
     & button:hover {
@@ -54,6 +87,10 @@
     width: 390px;
     padding: 22px 22px 52px 32px;
     background-color: $white-color;
+
+    @include mobile {
+        padding: 13px 17px 38px 17px;
+    }
 }
 
 .cart__heading-item {
@@ -63,12 +100,21 @@
     & span {
         display: block;
     }
+
+    @include mobile {
+        @include font (16px, 19px)
+    }
 }
 
 .cart__info-list {
     @include font(22px, 27px);
     color: $black-grey-color;
     margin-top: 42px;
+
+    @include mobile {
+        @include font (14px, 17px);
+        margin-top: 20px;
+    }
 
     & li {
         padding-bottom: 6px;
@@ -81,6 +127,15 @@
 
 .register__list {
     width: 359px;
+
+    @include tablets {
+        display: flex;
+        margin-top: 64px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .form__cart {
@@ -91,7 +146,7 @@
     }
 
     & input {
-        width: 360px;
+        width: 350px;
         height: 44px;
         margin-top: 20px;
         border: 1px solid $input-grey;
@@ -125,6 +180,15 @@
     background-color: $dirty-grey;
     margin-top: 58px;
     padding: 40px;
+
+    @include tablets {
+        margin-top: 38px;
+        margin-left: 20px;
+    }
+
+    @include mobile {
+        margin-left: 0;
+    }
 
     &__list {
         text-align: right;

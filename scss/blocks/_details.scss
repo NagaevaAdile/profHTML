@@ -2,6 +2,10 @@
     background-color: $black-light-color;
     min-height: 341px;
 
+    @include tablets {
+        padding-bottom: 48px;
+    }
+
     &__list {
         display: flex;
         justify-content: space-between;
@@ -9,9 +13,15 @@
         min-height: 341px;
         align-items: center;
 
-        // @include tablet {
-        //     flex-direction: column
-        // }
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        @include tablets {
+            margin-top: 48px;
+        }
     }
 
     &__heading {
@@ -24,11 +34,5 @@
         @include font(14px, 17px, 300);
         width: 300px;
         color: $white-dark-color;
-    }
-}
-
-@media (max-width: 770px) {
-    .details__list {
-        flex-direction: column;
     }
 }

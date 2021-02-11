@@ -86,6 +86,10 @@
         @include font(24px, 29px);
         text-transform: uppercase;
         color: $pink-dark-color;
+
+        @include mobile {
+            text-align: center;
+        }
     }
 
     &__catalog-list {
@@ -111,4 +115,10 @@
         color: $pink-dark-color;
     }
 
+}
+
+.header__none {
+    @include mobile {
+        display: none;
+    }
 }

@@ -2,12 +2,21 @@
     min-height: 79px;
     background-color: $black-light-color;
 
+    @include mobile {
+        min-height: 143px;
+    }
+
 
     &__list {
         display: flex;
         justify-content: space-around;
         align-items: center;
         min-height: 79px;
+
+        @include mobile {
+            flex-direction: column-reverse;
+            min-height: 143px;
+        }
     }
 
     &__link {
