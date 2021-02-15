@@ -2,6 +2,9 @@
     background-color: $black-light-color;
     min-height: 341px;
 
+    @include tablets {
+        padding-bottom: 48px;
+    }
 
     &__list {
         display: flex;
@@ -9,6 +12,16 @@
         text-align: center;
         min-height: 341px;
         align-items: center;
+
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        @include tablets {
+            margin-top: 48px;
+        }
     }
 
     &__heading {

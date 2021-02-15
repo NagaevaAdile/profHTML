@@ -8,19 +8,57 @@
         display: flex;
         align-items: center;
         padding-left: 60px;
+
+        @include mobile {
+            height: 363px;
+        }
+    }
+
+    &__svg {
+        margin-right: 16px;
+        width: 12px;
+        height: 93;
+
+        @include mobile {
+            height: 61px;
+        }
     }
 
     &__heading {
         @include font(48px, 58px, 900);
         text-transform: uppercase;
+
+        @include tablets {
+            @include font (44px, 52px, 900);
+        }
+
+        @include mobile {
+            @include font (38px, 45px, 900);
+        }
     }
 
     &__text {
         @include font(37px, 44px, 700);
         display: block;
+
+        @include tablets {
+            @include font (24px, 29px, 700)
+        }
+
+        @include mobile {
+            @include font (20px, 24px, 700);
+        }
     }
 
     &__pink {
         color: $pink-dark-color;
+    }
+
+    &__img {
+        width: 50%;
+
+        @include mobile {
+            display: none;
+        }
     }
 }

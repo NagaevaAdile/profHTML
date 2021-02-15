@@ -4,9 +4,13 @@
 
 .form__box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 64px;
     margin-bottom: 96px;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .legend__name {
@@ -22,6 +26,9 @@
     margin: 10px 0 10px 0;
     padding: 17px;
 
+    @include mobile {
+        width: 316px;
+    }
 
     &:hover {
         border: 1px solid $pink-dark-color;
@@ -93,6 +100,17 @@
 .form__info {
     @include font(24px, 29px, 300);
     width: 650px;
+
+    @include tablets {
+        margin-left: 20px;
+        @include font(16px, 19px, 300);
+    }
+
+    @include mobile {
+        margin-top: 40px;
+        width: 320px;
+    }
+
 
     & h2 {
         text-transform: uppercase;

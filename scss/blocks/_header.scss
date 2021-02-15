@@ -17,10 +17,12 @@
         border: none;
         margin: 0 0 0 33px;
         position: relative;
+
     }
 
     &__burger-btn {
         padding-top: 4px;
+        fill: white;
     }
 
     &__list {
@@ -72,4 +74,51 @@
         color: $pink-dark-color;
     }
 
+    &__catalog {
+        min-height: 148px;
+        background-color: $ping-grey-color;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__catalog-name {
+        @include font(24px, 29px);
+        text-transform: uppercase;
+        color: $pink-dark-color;
+
+        @include mobile {
+            text-align: center;
+        }
+    }
+
+    &__catalog-list {
+        @include font(14px, 17px, 300);
+        display: flex;
+        text-transform: uppercase;
+        color: $grey-dark-color;
+    }
+
+    &__catalog-item {
+        position: relative;
+        padding: 0 10px 0 0;
+
+        &::after {
+            content: '/';
+            position: absolute;
+            right: 2px;
+        }
+    }
+
+    &__catalog-transform {
+        font-weight: 700;
+        color: $pink-dark-color;
+    }
+
+}
+
+.header__none {
+    @include mobile {
+        display: none;
+    }
 }

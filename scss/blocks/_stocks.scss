@@ -2,26 +2,43 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 96px;
+    justify-content: space-between;
+
+    @include tablets {
+        margin-bottom: 155px;
+    }
 }
 
 .stock__item {
-    width: 360px;
+    width: 31%;
     min-height: 260px;
     margin-top: 65px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 106px;
-    box-sizing: border-box;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+
+    @include tablets {
+        margin-top: 20px;
+    }
+
+    @include mobile {
+        width: 350px;
+    }
 
     &--women {
         background-image: url(../img/stock-1.jpg);
-        margin-right: 30px;
+
+        @include mobile {
+            margin-top: 65px;
+        }
     }
 
     &--men {
         background-image: url(../img/stock-2.jpg);
-        margin-right: 30px;
+
     }
 
     &--kid {
@@ -32,11 +49,13 @@
         background-image: url(../img/stock-4.jpg);
         width: 100%;
         min-height: 180px;
-        padding-top: 65px;
+
+        @include mobile {
+            width: 350px;
+            height: 111px;
+        }
     }
 }
-
-
 
 .heading__stock-item {
     @include font(16px, 19px);
