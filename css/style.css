@@ -1205,6 +1205,10 @@ body,
   color: #FFFFFF;
 }
 
+.product__next {
+  background: #575757 !important;
+}
+
 .cart {
   display: flex;
   margin-top: 96px;
