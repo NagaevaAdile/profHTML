@@ -17,7 +17,6 @@
         border: none;
         margin: 0 0 0 33px;
         position: relative;
-
     }
 
     &__burger-btn {
@@ -33,14 +32,21 @@
     &__menu {
         display: flex;
         justify-content: space-between;
+
+        &-nav {
+            @include font(14px, 17px, 700);
+            color: $black-color;
+            text-transform: uppercase;
+            padding: 37px 33px 12px;
+        }
+
+        &-esc {
+            align-self: right;
+            margin: 16px;
+        }
     }
 
-    .navigation__esc {
-        align-self: right;
-        margin: 16px;
-    }
-
-    .header__navigation {
+    &__navigation {
         position: absolute;
         right: 0;
         display: none;
@@ -50,75 +56,67 @@
         outline: $grey-dark-color
     }
 
-    .navigation__header {
-        @include font(14px, 17px, 700);
-        color: $black-color;
-        text-transform: uppercase;
-        padding: 37px 33px 12px;
-    }
-
-    .header__name {
+    &__name {
         @include font(14px, 17px);
         color: $pink-dark-color;
         text-transform: uppercase;
         padding: 20px 12px 0 33px;
     }
 
-    .header__items li {
+    &__items li {
         @include font(14px, 17px);
         color: $grey-opas-color;
         padding: 11px 0 0 54px;
-    }
 
-    .list__items:focus {
-        color: $pink-dark-color;
-    }
-
-    &__catalog {
-        min-height: 148px;
-        background-color: $ping-grey-color;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    &__catalog-name {
-        @include font(24px, 29px);
-        text-transform: uppercase;
-        color: $pink-dark-color;
-
-        @include mobile {
-            text-align: center;
+        &-list:focus {
+            color: $pink-dark-color;
         }
     }
-
-    &__catalog-list {
-        @include font(14px, 17px, 300);
-        display: flex;
-        text-transform: uppercase;
-        color: $grey-dark-color;
-    }
-
-    &__catalog-item {
-        position: relative;
-        padding: 0 10px 0 0;
-
-        &::after {
-            content: '/';
-            position: absolute;
-            right: 2px;
-        }
-    }
-
-    &__catalog-transform {
-        font-weight: 700;
-        color: $pink-dark-color;
-    }
-
 }
 
 .header__none {
     @include mobile {
         display: none;
     }
+}
+
+.main__header-catalog {
+    min-height: 148px;
+    background-color: $ping-grey-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__catalog-name {
+    @include font(24px, 29px);
+    text-transform: uppercase;
+    color: $pink-dark-color;
+
+    @include mobile {
+        text-align: center;
+    }
+}
+
+.main__catalog-list {
+    @include font(14px, 17px, 300);
+    display: flex;
+    text-transform: uppercase;
+    color: $grey-dark-color;
+}
+
+.main__catalog-item {
+    position: relative;
+    padding: 0 10px 0 0;
+
+    &::after {
+        content: '/';
+        position: absolute;
+        right: 2px;
+    }
+}
+
+.main__catalog-transform {
+    font-weight: 700;
+    color: $pink-dark-color;
 }

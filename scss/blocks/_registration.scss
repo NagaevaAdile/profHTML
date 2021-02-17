@@ -1,8 +1,8 @@
-.header__registration {
+.main__header-catalog--registration {
     justify-content: start;
 }
 
-.form__box {
+.form {
     display: flex;
     justify-content: space-between;
     margin-top: 64px;
@@ -13,7 +13,7 @@
     }
 }
 
-.legend__name {
+.form__legend {
     @include font(16px, 19px, 300);
     margin-bottom: 10px;
     margin-top: 10px;
@@ -35,28 +35,26 @@
     }
 }
 
-
-.input__text {
+.form__input-text {
     @include font(13px, 16px, 300);
     color: $grey-color;
     width: 360px;
     margin-top: 5px;
 }
 
-.radio__input__box {
+.form__radio {
     margin: 35px 0;
 }
 
-.radio__input {
+.form__radio-input {
     display: none;
 }
 
-.radio__label {
+.form__radio-label {
     @include font(13px, 13px, 300);
     margin: 20px;
     position: relative;
     padding-left: 10px;
-
 
     &:before {
         position: absolute;
@@ -74,7 +72,7 @@
 }
 
 
-.radio__input:checked+.radio__label:before {
+.form__radio-input:checked+.form__radio-label:before {
     /* background-color: $input-grey; */
     background-image: url('../img/esc.png');
     background-size: 16px;
@@ -111,7 +109,6 @@
         width: 320px;
     }
 
-
     & h2 {
         text-transform: uppercase;
     }
@@ -121,8 +118,7 @@
     }
 }
 
-
-.form__info__item {
+.form__info-item {
     margin: 0 0 16px 0;
     position: relative;
     padding: 0 0 0 45px;
