@@ -34,10 +34,10 @@
         &:hover .item__svg {
             fill: $white-color;
         }
-    }
 
-    .item__svg {
-        fill: $black-color;
+        &-svg {
+            fill: $black-color;
+        }
     }
 
     &__item:hover {

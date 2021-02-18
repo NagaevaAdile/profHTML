@@ -36,14 +36,13 @@
         margin-right: 20px;
         margin-left: 20px;
 
-        &:hover .over__wrapper {
+        &:hover .fetured__item-over-wrapper {
             display: block;
         }
 
         @include tablets {
             margin-left: 0;
         }
-
     }
 
     &__btn {
@@ -90,8 +89,7 @@
         color: $white-color;
     }
 
-
-    .over__wrapper {
+    .fetured__item-over-wrapper {
         display: none;
     }
 
@@ -103,7 +101,7 @@
         top: 0;
     }
 
-    .btn__text {
+    .fetured__btn-text {
         padding-left: 13px;
         align-self: center;
     }
@@ -113,7 +111,7 @@
         margin: 50px 0 64px 20px;
     }
 
-    &__fil {
+    &__fill {
         @include font(14px, 17px, 600);
         display: flex;
         text-transform: uppercase;

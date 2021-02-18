@@ -1,7 +1,6 @@
-.intro__product {
+.main__product {
     background-color: $dirty-white;
     height: 777px;
-
 }
 
 .product__img {
@@ -13,7 +12,7 @@
     margin-top: 130px;
 }
 
-.product__card {
+.product {
     width: 1141px;
     height: 601px;
     border: 1px solid $dirty-dirty-white;
@@ -30,7 +29,7 @@
     padding: 65px 0 0 0;
 }
 
-.line__pink {
+.product__pink-line {
     margin: 12px 0;
 }
 

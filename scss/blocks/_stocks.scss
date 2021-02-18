@@ -55,12 +55,12 @@
             height: 111px;
         }
     }
-}
 
-.heading__stock-item {
-    @include font(16px, 19px);
-    color: $white-color;
-    text-transform: uppercase;
+    &-heading {
+        @include font(16px, 19px);
+        color: $white-color;
+        text-transform: uppercase;
+    }
 }
 
 .stock__pink {
