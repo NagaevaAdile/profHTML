@@ -71,12 +71,10 @@
     // }
 }
 
-
 .form__radio-input:checked+.form__radio-label:before {
     /* background-color: $input-grey; */
     background-image: url('../img/esc.png');
     background-size: 16px;
-
 }
 
 .form__submit {
@@ -89,7 +87,7 @@
     margin: 39px 0 0 0;
 
 
-    & svg {
+    svg {
         margin-left: 20px;
     }
 }
@@ -109,11 +107,11 @@
         width: 320px;
     }
 
-    & h2 {
+    h2 {
         text-transform: uppercase;
     }
 
-    & p {
+    p {
         margin: 22px 0;
     }
 }

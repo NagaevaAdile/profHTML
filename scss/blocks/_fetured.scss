@@ -2,39 +2,39 @@
     display: flex;
     flex-direction: column;
 
-    &__heading {
+    .fetured__heading {
         @include font(30px, 36px);
         text-align: center;
     }
 
-    &__text {
+    .fetured__text {
         @include font(14px, 17px);
         color: $grey-color;
         text-align: center;
         margin: 0 0 48px;
     }
 
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
+    .fetured__list {
+        display: grid;
+        grid-template-columns: repeat(3, 375px);
+        grid-gap: 30px 10px;
         justify-content: center;
 
         @include tablets {
-            width: 768px;
+            max-width: 768px;
+            grid-template-columns: repeat(2, 375px);
         }
 
         @include mobile {
-            width: 375px;
+            max-width: 375px;
+            grid-template-columns: repeat(1, 375px);
         }
     }
 
-    &__item {
+    .fetured__item {
         width: 360px;
         background-color: $grey-light-color;
-        margin: 30px 0 0 10px;
         position: relative;
-        margin-right: 20px;
-        margin-left: 20px;
 
         &:hover .fetured__item-over-wrapper {
             display: block;
@@ -45,7 +45,7 @@
         }
     }
 
-    &__btn {
+    .fetured__btn {
         @include font(14px, 17px);
         position: absolute;
         top: 50%;
@@ -57,25 +57,25 @@
         padding: 13px 14px 16px 13px;
     }
 
-    &__heading-item {
+    .fetured__heading-item {
         @include font(13px, 16px);
         text-transform: uppercase;
         padding: 25px 0 13px 18px;
     }
 
-    &__text-item {
+    .fetured__text-item {
         @include font(14px, 17px, 300);
         color: $grey-dark-color;
-        padding: 0 0 16px 18px;
+        padding: 0 10px 16px 18px;
     }
 
-    &__price {
+    .fetured__price {
         @include font(16px, 19px);
         color: $pink-dark-color;
         padding: 0 0 20px 18px;
     }
 
-    &__browse-product {
+    .fetured__browse-product {
         @include font(16px, 19px);
         color: $pink-dark-color;
         padding: 15px 38px;
@@ -84,7 +84,7 @@
         margin: 49px auto 95px;
     }
 
-    &__browse-product:hover {
+    .fetured__browse-product:hover {
         background-color: $pink-dark-color;
         color: $white-color;
     }
@@ -106,25 +106,87 @@
         align-self: center;
     }
 
-    &__filter {
+    .fetured__filter {
         display: flex;
         margin: 50px 0 64px 20px;
     }
 
-    &__fill {
+    .fetured__fill {
         @include font(14px, 17px, 600);
         display: flex;
         text-transform: uppercase;
         position: relative;
+        margin-left: 6.2%;
     }
 
-    &__img {
+    .fetured__fill:hover &__fill-menu {
+        display: block;
+    }
+
+    .fetured__filter-img {
+        margin: 4px 0 0 10px;
+        fill: $black-color;
+    }
+
+    .fetured__fill-menu-header {
+        @include font(14px, 17px, 600);
+        display: flex;
+        text-transform: uppercase;
+        position: relative;
+        color: $pink-dark-color;
+    }
+
+    .fetured__filter-img--pink {
+        fill: $pink-dark-color;
+    }
+
+    .fetured__fill-menu {
+        display: none;
+        position: absolute;
+        background-color: $white-color;
+        z-index: 1;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        width: 360px;
+        height: 583px;
+        padding: 16px 16px 0 16px;
+    }
+
+    .fetured__category {
+        @include font (14px, 17px);
+        text-transform: uppercase;
+        color: $grey-opas-color;
+        border-bottom: 1px solid $grey-grey-color;
+        border-left: 5px solid $pink-dark-color;
+        padding: 11px;
+        margin-top: 25px;
+
+        &:hover {
+            color: $pink-dark-color;
+        }
+    }
+
+    .fetured__category-details {
+        @include font (14px, 17px);
+        color: $grey-opas-color;
+        margin: 25px;
+        text-transform: capitalize;
+
+        li {
+            padding-bottom: 11px;
+        }
+
+        li:hover {
+            color: $pink-dark-color;
+        }
+    }
+
+    .fetured__img {
         position: absolute;
         top: 3px;
         left: 50px;
     }
 
-    &__fil-details {
+    .fetured__fil-details {
         @include font(14px, 17px);
         display: flex;
         color: $grey-opas-color;
@@ -133,12 +195,61 @@
         left: 42%;
     }
 
-    &__list-item {
+    .fetured__list-item {
         position: relative;
         margin: 0 48px 0 0;
     }
 
-    &__list-item::after {
+    .fetured__list-item--size {
+        position: relative;
+
+        &:hover .fetured__item-size {
+            display: block;
+        }
+    }
+
+    .fetured__item-size {
+        display: none;
+        width: 80px;
+        height: 103px;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        background-color: $white-color;
+        position: absolute;
+        z-index: 1;
+        top: 25px;
+        left: -15px;
+        padding: 7px;
+    }
+
+    .fetured__item-size-checkbox {
+        display: none;
+    }
+
+    .fetured__item-size-label {
+        @include font(14px, 16px);
+        color: $grey-opas-color;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0 6px 28px;
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 12px;
+            height: 12px;
+            border: 1px solid $grey-grey-color;
+            left: -26px;
+            top: 1px;
+        }
+    }
+
+    .fetured__item-size-checkbox:checked+.fetured__item-size-label::before {
+        background-color: $input-grey;
+        background-size: 12px;
+    }
+
+    .fetured__list-item::after {
         content: '';
         position: absolute;
         width: 10px;

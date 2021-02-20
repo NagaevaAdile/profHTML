@@ -6,7 +6,7 @@
         padding-bottom: 48px;
     }
 
-    &__list {
+    .details__list {
         display: flex;
         justify-content: space-between;
         text-align: center;
@@ -18,19 +18,19 @@
         }
     }
 
-    &__item {
+    .details__item {
         @include tablets {
             margin-top: 48px;
         }
     }
 
-    &__heading {
+    .details__heading {
         @include font(20px, 24px);
         color: $white-color;
         margin: 25px 0 16px;
     }
 
-    &__text {
+    .details__text {
         @include font(14px, 17px, 300);
         width: 300px;
         color: $white-dark-color;

@@ -190,11 +190,11 @@
         margin-left: 0;
     }
 
-    &__list {
+    .total__list {
         text-align: right;
     }
 
-    &__sub {
+    .total__sub {
         @include font (11px, 13px);
         text-transform: uppercase;
 
@@ -203,7 +203,7 @@
         }
     }
 
-    &__grand {
+    .total__grand {
         @include font (16px, 19px, 300);
         text-transform: uppercase;
         margin-top: 12px;
@@ -215,7 +215,7 @@
         }
     }
 
-    &__line {
+    .total__line {
         color: $black-color;
         margin: 21px 0 17px 0;
     }

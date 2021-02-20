@@ -1,8 +1,7 @@
 .intro {
     display: flex;
 
-
-    &__heading-box {
+    .intro__heading-box {
         background-color: $pink-color;
         width: 100%;
         display: flex;
@@ -14,7 +13,7 @@
         }
     }
 
-    &__svg {
+    .intro__svg {
         margin-right: 16px;
         width: 12px;
         height: 93;
@@ -24,7 +23,7 @@
         }
     }
 
-    &__heading {
+    .intro__heading {
         @include font(48px, 58px, 900);
         text-transform: uppercase;
 
@@ -37,7 +36,7 @@
         }
     }
 
-    &__text {
+    .intro__text {
         @include font(37px, 44px, 700);
         display: block;
 
@@ -50,11 +49,11 @@
         }
     }
 
-    &__pink {
+    .intro__pink {
         color: $pink-dark-color;
     }
 
-    &__img {
+    .intro__img {
         width: 50%;
 
         @include mobile {
