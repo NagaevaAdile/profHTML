@@ -135,6 +135,7 @@
 
     @include mobile {
         flex-direction: column;
+        margin-left: 0;
     }
 }
 
