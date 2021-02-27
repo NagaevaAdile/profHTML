@@ -109,6 +109,16 @@
     .fetured__filter {
         display: flex;
         margin: 50px 0 64px 20px;
+
+        @include mobile {
+            margin-left: 0;
+        }
+    }
+
+    .fetured__fill h2 {
+        @include mobile {
+            display: none;
+        }
     }
 
     .fetured__fill {
@@ -117,6 +127,10 @@
         text-transform: uppercase;
         position: relative;
         margin-left: 6.2%;
+
+        @include mobile {
+            margin-left: 0;
+        }
     }
 
     .fetured__fill:hover &__fill-menu {
@@ -126,6 +140,12 @@
     .fetured__filter-img {
         margin: 4px 0 0 10px;
         fill: $black-color;
+
+        @include mobile {
+            margin-left: 0;
+            width: 37px;
+            height: 25px;
+        }
     }
 
     .fetured__fill-menu-header {
@@ -193,11 +213,19 @@
         text-transform: uppercase;
         position: absolute;
         left: 42%;
+
+        @include mobile {
+            left: 20%;
+        }
     }
 
     .fetured__list-item {
         position: relative;
         margin: 0 48px 0 0;
+
+        @include mobile {
+            margin: 0 28px 0 0;
+        }
     }
 
     .fetured__list-item--size {
