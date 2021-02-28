@@ -55,6 +55,7 @@
 
     .intro__img {
         width: 50%;
+        height: auto;
 
         @include mobile {
             display: none;
